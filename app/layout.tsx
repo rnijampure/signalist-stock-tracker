@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-
+import Aurora from "../components/Aurora";
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -27,6 +27,20 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <div
+          className="min-h-screen antialiased absolute top-0 left-0 w-full h-full pointer-events-none
+        z-[-1] mx-auto inset-0
+        "
+        >
+          {" "}
+          <Aurora
+            colorStops={["#7cff67", "#b19eef", "#5227ff"]}
+            blend={0.3}
+            amplitude={1.0}
+            speed={0.2}
+          />
+        </div>
+
         {children}
       </body>
     </html>
