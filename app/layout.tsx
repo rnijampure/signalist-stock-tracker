@@ -28,7 +28,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <div
-          className="min-h-screen antialiased absolute top-0 left-0 w-full h-full pointer-events-none
+          className="min-h-screen antialiased absolute overflow-hidden top-0 left-0 w-full h-full pointer-events-none
         z-[-1] mx-auto inset-0
         "
         >

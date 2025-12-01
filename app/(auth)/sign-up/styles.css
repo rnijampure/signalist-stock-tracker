@@ -1,0 +1,99 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+form {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+h1 {
+  /*ottom: 1px solid rgb(79, 98, 148);*/
+
+  @apply text-center  border-b border-gray-500 pb-10;
+}
+
+.form {
+  background: #0e101c;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+input,
+.shadSelect {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  border-radius: 10px;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  @apply border border-amber-50;
+  position: relative;
+}
+.shadSelect svg {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.shadSelect span {
+  @apply lowercase text-white mt-3;
+}
+select option {
+  @apply bg-gray-800;
+}
+p.error::before {
+  content: "⚠ ";
+}
+p.error {
+  @apply text-red-500 text-sm;
+}
+label {
+  line-height: 2;
+  text-align: left;
+  display: block;
+  margin-bottom: 5px;
+  margin-top: 20px;
+  color: white;
+  font-size: 14px;
+}
+
+button[type="submit"],
+input[type="submit"] {
+  background: #ec5990;
+
+  color: black;
+  text-transform: uppercase;
+  border: none;
+  margin-top: 40px;
+  padding: 10px;
+  font-weight: 100;
+  letter-spacing: 5px;
+  @apply h-12 cursor-pointer bg-gradient-to-b from-yellow-400 to-yellow-500 hover:from-yellow-500 hover:to-yellow-400 text-gray-950 font-medium text-base rounded-lg shadow-lg disabled:opacity-50;
+}
+
+button[type="submit"]:active,
+input[type="button"]:active,
+input[type="submit"]:active {
+  transition: 0.3s all;
+  transform: translateY(3px);
+  border: 1px solid transparent;
+  opacity: 0.8;
+}
+
+input:disabled {
+  opacity: 0.4;
+}
+
+input[type="button"]:hover {
+  transition: 0.3s all;
+}
+
+button[type="submit"],
+input[type="button"],
+input[type="submit"] {
+  -webkit-appearance: none;
+}
+
+hr {
+  margin-top: 30px;
+}

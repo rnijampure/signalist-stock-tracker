@@ -349,3 +349,96 @@ export const WATCHLIST_TABLE_HEADER = [
   "Alert",
   "Action",
 ];
+export type options = {
+  value: string;
+  label: string;
+  disabled?: boolean;
+};
+// extend options
+export type iconOption = options & {
+  emoji?: string;
+  image?: string;
+  unicode?: string;
+};
+export const COUNTRY_LIST: iconOption[] = [
+  {
+    label: "Ascension Island",
+    value: "AC",
+    emoji: "🇦🇨",
+    unicode: "U+1F1E6 U+1F1E8",
+    image:
+      "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/AC.svg",
+  },
+  {
+    label: "Indonesia",
+    value: "ID",
+    emoji: "🇮🇩",
+    unicode: "U+1F1EE U+1F1E9",
+    image:
+      "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/ID.svg",
+  },
+  {
+    label: "United States",
+    value: "US",
+    emoji: "🇺🇸",
+    unicode: "U+1F1FA U+1F1F8",
+    image:
+      "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/US.svg",
+  },
+  {
+    label: "Canada",
+    value: "CA",
+    emoji: "🇨🇦",
+    unicode: "U+1F1E8 U+1F1E6",
+    image:
+      "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/CA.svg",
+  },
+  {
+    label: "Japan",
+    value: "JP",
+    emoji: "🇯🇵",
+    unicode: "U+1F1EF U+1F1F5",
+    image:
+      "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/JP.svg",
+  },
+  {
+    label: "Australia",
+    value: "AU",
+    emoji: "🇦🇺",
+    unicode: "U+1F1E6 U+1F1FA",
+    image:
+      "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/AU.svg",
+  },
+  {
+    label: "Germany",
+    value: "DE",
+    emoji: "🇩🇪",
+    unicode: "U+1F1E9 U+1F1EA",
+    image:
+      "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/DE.svg",
+  },
+  {
+    label: "Brazil",
+    value: "BR",
+    emoji: "🇧🇷",
+    unicode: "U+1F1E7 U+1F1F7",
+    image:
+      "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/BR.svg",
+  },
+  {
+    label: "France",
+    value: "FR",
+    emoji: "🇫🇷",
+    unicode: "U+1F1EB U+1F1F7",
+    image:
+      "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/FR.svg",
+  },
+  {
+    label: "India",
+    value: "IN",
+    emoji: "🇮🇳",
+    unicode: "U+1F1EE U+1F1F3",
+    image:
+      "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/IN.svg",
+  },
+];
